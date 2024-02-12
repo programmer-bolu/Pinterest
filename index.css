@@ -1,0 +1,469 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+    border-bottom: thin solid rgb(231, 231, 231);
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 100%;
+}
+
+header .logo svg {
+    width: 150px;
+    margin-left: 50px;
+}
+
+header .logo p {
+    color: black;
+    font-size: 1em;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-left: -112px;
+    font-weight: 900 !important;
+}
+
+header nav {
+    height: 100%;
+    width: 500px;
+    margin-left: 40%;
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+header .logo i {
+    display: none;
+    font-size: 3em;
+    margin-left: 80%;
+    position: absolute;
+}
+
+header:hover {
+    animation: color .3s forwards linear;
+    animation-name: me;
+}
+
+header:hover .logo p {
+    animation: color .3s forwards linear;
+}
+
+header:hover nav a {
+    animation: color .3s forwards linear;
+}
+
+header:hover .logo svg {
+    animation: color .3s forwards linear;
+}
+
+header:hover .logo i {
+    animation: color .3s forwards linear;
+}
+
+@keyframes color {
+    to {
+        color: white;
+        fill: white;
+    }
+}
+
+@keyframes me {
+    to {
+        background-color: black;
+    }
+}
+
+/* FIRST SECTION STARTS */
+.main {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 80px;
+}
+
+.main div {
+    width: 50%;
+    min-height: inherit;
+}
+
+.main .information {
+    padding: 30px;
+}
+
+.main .information p {
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+}
+
+.main .information h1 {
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    margin: auto;
+    width: 80%;
+    font-size: 3em;
+}
+
+.main .information button {
+    height: 60px;
+    width: 150px;
+    border-radius: 30px;
+    display: block;
+    margin: auto;
+    border: 2px solid black;
+    background-color: transparent;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.main .information button:hover {
+    animation: colorch .3s forwards
+}
+
+@keyframes colorch {
+    to {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        border-color: white;
+    }
+}
+
+.main .image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* SECOND SECTION STARTS */
+h1 {
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 4em;
+    margin: 100px;
+}
+
+.latestNews {
+    display: grid;
+    margin: auto;
+    margin-top: 50px;
+    min-height: 600px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    width: 90%;
+}
+
+.latestNews div img {
+    width: 100%;
+    height: 250px;
+}
+
+.latestNews div h1 {
+    font-size: 1.6em;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.latestNews div a {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+button {
+    height: 60px;
+    width: 150px;
+    border-radius: 30px;
+    display: block;
+    margin: auto;
+    border: 2px solid black;
+    background-color: transparent;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    font-size: 1.2em;
+    margin-top: 150px;
+}
+
+button:hover {
+    animation: colorch .3s forwards
+}
+
+.pressicons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    flex-wrap: wrap;
+}
+
+.pressicons div img {
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+.pressicons div p {
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+/* INSPIRED SECTION STARTS */
+.inspired {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.inspired .pictures {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.inspired .info {
+    width: 60%;
+    padding-left: 50px;
+}
+
+.inspired .info h1 {
+    text-align: start;
+    width: 60%;
+    margin: 0px;
+    font-size: 4.5em;
+    margin-top: 100px;
+}
+
+.inspired .info p {
+    text-align: start;
+    margin-top: 30px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    font-size: 1.5em;
+}
+
+.inspired .info button {
+    height: 60px;
+    width: 170px;
+    border-radius: 30px;
+    display: inline;
+    border: 2px solid black;
+    background-color: transparent;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    font-size: 1.2em;
+    margin-top: 50px;
+}
+
+.inspired .pictures div img {
+    width: 300px;
+    height: 400px;
+    display: block;
+    margin-top: 15px;
+}
+
+.inspired .pictures div:nth-of-type(1) {
+    margin-left: -73px;
+}
+
+.inspired .pictures div:nth-of-type(2) {
+    margin-top: -70px;
+    margin-left: 10px;
+}
+
+.else {
+    margin-top: 100px;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.else div img {
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+.else div p {
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+footer {
+    min-height: 500px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+footer div {
+    display: block;
+    padding: 70px;
+    width: 50%;
+}
+
+footer div select {
+    display: block;
+    height: 50px;
+    width: 250px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.2em;
+    margin-top: 50px;
+    padding-left: 10px;
+}
+
+footer div select option {
+    background-color: black;
+}
+footer div:nth-of-type(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    list-style-type: none;
+}
+
+footer div:nth-of-type(2) ul {
+    font-size: 1.2em;
+    list-style-type: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    margin-left: 20px;
+    width: 200px;
+    margin-top: 30px;
+}
+footer div:nth-of-type(2) ul li{
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+
+
+@media (max-width:1220px) {
+    .inspired .pictures div:nth-of-type(2) {
+        display: none;
+    }
+}
+
+@media (max-width: 1034px) {
+    header nav {
+        margin-left: 20%;
+    }
+
+    .main .information h1 {
+        font-size: 2em;
+    }
+
+    .latestNews {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    footer{
+        display: block;
+    }
+    footer div:nth-of-type(2) {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav {
+        display: none;
+    }
+
+    header .logo {
+        width: 95%;
+        margin: auto;
+    }
+
+    header .logo i {
+        display: block;
+    }
+
+    header .logo svg {
+        margin-left: 2%;
+    }
+
+    .main {
+        display: block;
+    }
+
+    .main div {
+        width: 100%;
+        margin: auto;
+        min-height: 400px;
+    }
+
+    .latestNews {
+        grid-template-columns: 1fr;
+    }
+
+    .latestNews div img {
+        height: 350px;
+    }
+
+    .inspired {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .latestNews div img {
+        height: 250px;
+    }
+    footer div select   {
+        width: 150px;
+        font-size: 1em;
+        height: 30px;
+    }
+}
